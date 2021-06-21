@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Kirang+Haerang&display=swap" rel="stylesheet">
+<style>
+
+  body {
+    background-color: black;
+    color:white;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Kirang Haerang', cursive;
+  }
+
+  form {
+    display: inline-block;
+    
+}
+
+.btn {
+  transition-duration: 0.4s;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 15px;
+}
+
+.btn:hover {
+  background-color:goldenrod; 
+  color: black;
+  
+}
+h1:hover, #hmsm:hover{
+  color:goldenrod;
+}
+
+</style>
+<body> 
+  <h1>Timer</h1> 
+    <form name="formTimer" >
+      <div id = "hmsm">
+        <span id="hour">00</span>:
+        <span id="minute">00</span>:
+        <span id="second">00</span>:
+        <span id="millisecond">000</span>
+      </div>
+    
+      <br />
+    
+      <button class ="btn" type="button" name="start">start</button>
+      <button class ="btn" type="button" name="pause">pause</button>
+      <button class ="btn" type="button" name="stop">stop</button>
+      <button class ="btn" type="button" name="reset">reset</button>
+    </form>
+      <script src="app.js"></script>
+</body>
+</html>
+
+
+
