@@ -23,6 +23,11 @@ function pause() {
 
 function stop() {
   clearInterval(time);
+  document.getElementById("forStop").innerText =
+    `${returnData(hour)}:` +
+    `${returnData(minute)}:` +
+    `${returnData(second)}:` +
+    `${returnData(millisecond)}`;
 }
 
 function reset() {
